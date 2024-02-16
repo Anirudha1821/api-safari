@@ -3,6 +3,8 @@ import Home from "./components/Home";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Mynav from "./components/Mynav";
+import Options from "./components/Options";
+import Apirecords from "./components/Apirecords";
 import { Route, Routes } from "react-router-dom";
 
 import DataProvider from "./context/DataProvider";
@@ -11,7 +13,9 @@ function App() {
   return (
     <>
     <Mynav />
-    <Routes>
+    <Options />
+
+    {/* <Routes>
       <Route
         path="/"
         element={
@@ -23,7 +27,8 @@ function App() {
       />
       <Route path="/Login" element={<Login />} />
       <Route path="/Signup" element={<Signup />} />
-    </Routes>
+      <Route path="/Apirecords" element={<Apirecords />} />
+    </Routes> */}
     </>
 
   );

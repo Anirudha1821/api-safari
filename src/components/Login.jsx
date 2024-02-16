@@ -24,6 +24,7 @@ const Login = () => {
 
   return (
     <ThemeProvider theme={defaultTheme}>
+    <div style={{ backgroundColor: "black", minHeight: "100vh" }}>
       <Container
         component="main"
         maxWidth="xs"
@@ -33,6 +34,7 @@ const Login = () => {
           alignItems: "center",
           justifyContent: "center",
           height: "80vh",
+          // backgroundColor: "black", // Set background color directly
         }}
       >
         <CssBaseline />
@@ -42,6 +44,7 @@ const Login = () => {
             width: "100%",
             borderRadius: "10px",
             boxShadow: "0px 0px 4px 0px",
+            backgroundColor: "white", // Set background color directly
           }}
         >
           <Box
@@ -100,6 +103,7 @@ const Login = () => {
           </Box>
         </Box>
       </Container>
+      </div>
     </ThemeProvider>
   );
 };

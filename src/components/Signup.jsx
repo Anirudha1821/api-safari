@@ -28,32 +28,33 @@ const Signup = () => {
         <CssBaseline />
       <div style={{ backgroundColor: "black", minHeight: "100vh" }}>
         <Container
-          component="main"
-          maxWidth="xs"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            height: "80vh",
-            marginTop: "100px", // Add this line to set the top padding
-            backgroundColor: "white",
+        component="main"
+        maxWidth="xs"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "80vh",
+          marginTop: "100px",
+          // backgroundColor: "black", // Set background color directly
           }}
         >
           <Box
-            sx={{
-              padding: "30px",
-              width: "100%",
-              borderRadius: "10px",
-              boxShadow: "0px 0px 4px 0px",
-            }}
+          sx={{
+            padding: "30px",
+            width: "100%",
+            borderRadius: "10px",
+            boxShadow: "0px 0px 4px 0px",
+            backgroundColor: "white", // Set background color directly
+          }}
           >
             <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-              }}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
             >
               <Typography component="h1" variant="h5">
                 SIGN UP

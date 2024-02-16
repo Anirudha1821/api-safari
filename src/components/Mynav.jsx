@@ -41,6 +41,9 @@ function Mynav() {
               <Link id="nav-about" href="#about" className="nav_link" to="/Signup">Signup</Link>
             </li>
             <li>
+              <Link id="nav-about" href="#about" className="nav_link" to="/Apirecords">Apirecords</Link>
+            </li>
+            <li>
               <a id="nav-connect" href="#connect" className="nav_link">
                 Collections
               </a>
