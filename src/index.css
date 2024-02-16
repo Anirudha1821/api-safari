@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 200dvh;
+  height: 100dvh;
+  background-color:black;
   /* scroll bar height  */
 }
 

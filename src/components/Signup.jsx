@@ -23,112 +23,116 @@ const Signup = () => {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Container
-        component="main"
-        maxWidth="xs"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          height: "80vh",
-          marginTop: "100px",// Add this line to set the top padding
-          
-        }}
-      >
+      
         <CssBaseline />
-        <Box
-          sx={{
-            padding: "30px",
-            width: "100%",
-            borderRadius: "10px",
-            boxShadow: "0px 0px 4px 0px",
+        <CssBaseline />
+      <div style={{ backgroundColor: "black", minHeight: "100vh" }}>
+        <Container
+          component="main"
+          maxWidth="xs"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            height: "80vh",
+            marginTop: "100px", // Add this line to set the top padding
+            backgroundColor: "white",
           }}
         >
           <Box
             sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
+              padding: "30px",
+              width: "100%",
+              borderRadius: "10px",
+              boxShadow: "0px 0px 4px 0px",
             }}
           >
-            <Typography component="h1" variant="h5">
-              SIGN UP
-            </Typography>
             <Box
-              component="form"
-              onSubmit={handleSubmit}
-              noValidate
-              sx={{ mt: 1 }}
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
             >
-              <TextField
-                margin="normal"
-                required
-                fullWidth
-                id="restaurant"
-                label="Restaurant Name"
-                name="text"
-                autoComplete="text"
-                autoFocus
-              />
-              <TextField
-                margin="normal"
-                required
-                fullWidth
-                id="phoneNo"
-                label="Mobile Number"
-                name="number"
-                autoComplete="number"
-              />
-              <TextField
-                margin="normal"
-                required
-                fullWidth
-                id="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
-              />
-              <TextField
-                margin="normal"
-                required
-                fullWidth
-                name="password"
-                label="Password"
-                type="password"
-                id="password"
-                autoComplete="current-password"
-              />
-              <TextField
-                margin="normal"
-                required
-                fullWidth
-                name="confirmPassword"
-                label="Confirm Password"
-                type="password"
-                id="password"
-                autoComplete="current-password"
-              />
-              <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                style={{ backgroundColor: "#ff7549" }}
-                sx={{ mt: 3, mb: 2 }}
+              <Typography component="h1" variant="h5">
+                SIGN UP
+              </Typography>
+              <Box
+                component="form"
+                onSubmit={handleSubmit}
+                noValidate
+                sx={{ mt: 1 }}
               >
-                Sign up
-              </Button>
-              <Grid container>
-                <Grid item>
-                  <Link href="/login" variant="body2">
-                    {"Already have an account?"}
-                  </Link>
+                <TextField
+                  margin="normal"
+                  required
+                  fullWidth
+                  id="restaurant"
+                  label="Restaurant Name"
+                  name="text"
+                  autoComplete="text"
+                  autoFocus
+                />
+                <TextField
+                  margin="normal"
+                  required
+                  fullWidth
+                  id="phoneNo"
+                  label="Mobile Number"
+                  name="number"
+                  autoComplete="number"
+                />
+                <TextField
+                  margin="normal"
+                  required
+                  fullWidth
+                  id="email"
+                  label="Email Address"
+                  name="email"
+                  autoComplete="email"
+                />
+                <TextField
+                  margin="normal"
+                  required
+                  fullWidth
+                  name="password"
+                  label="Password"
+                  type="password"
+                  id="password"
+                  autoComplete="current-password"
+                />
+                <TextField
+                  margin="normal"
+                  required
+                  fullWidth
+                  name="confirmPassword"
+                  label="Confirm Password"
+                  type="password"
+                  id="password"
+                  autoComplete="current-password"
+                />
+                <Button
+                  type="submit"
+                  fullWidth
+                  variant="contained"
+                  style={{ backgroundColor: "#ff7549" }}
+                  sx={{ mt: 3, mb: 2 }}
+                >
+                  Sign up
+                </Button>
+                <Grid container>
+                  <Grid item>
+                    <Link href="/login" variant="body2">
+                      {"Already have an account?"}
+                    </Link>
+                  </Grid>
                 </Grid>
-              </Grid>
+              </Box>
             </Box>
           </Box>
-        </Box>
-      </Container>
+        </Container>
+        </div>
     </ThemeProvider>
   );
 };

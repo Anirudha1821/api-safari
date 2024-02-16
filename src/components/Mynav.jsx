@@ -17,7 +17,7 @@ function Mynav() {
             alt=""
           />
           <h1 id="title" className="hf_text">
-            Hello World!
+             API Safari
           </h1>
         </div>
         <div id="nav-items">
