@@ -4,6 +4,8 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Mynav from "./components/Mynav";
 import Options from "./components/Options";
+import UserServer from "./components/UserServer";
+import Profile from "./components/Profile";
 import Apirecords from "./components/Apirecords";
 import { Route, Routes } from "react-router-dom";
 
@@ -13,7 +15,9 @@ function App() {
   return (
     <>
     <Mynav />
-    <Options />
+    <Profile />
+    {/* <Options /> */}
+    {/* <UserServer /> */}
 
     {/* <Routes>
       <Route
