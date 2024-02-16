@@ -4,6 +4,7 @@ import BootstrapNav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Mynav.css'; // Relative path to your external CSS file
 
+import { Link } from 'react-router-dom';
 
 function Mynav() {
   return (
@@ -30,23 +31,18 @@ function Mynav() {
           </div>
           <ul className="nav-links">
             <li>
-              <a id="nav-home" href="#home" className="nav_link">
-                HOME
-              </a>
+            <Link id="nav-home" href="#home" className="nav_link" to="/">Home</Link>
             </li>
             <li>
-              <a id="nav-work" href="#work" className="nav_link">
-                WORK
-              </a>
+              <Link id="nav-work" href="#work" className="nav_link" to="/Login">Login</Link>
+
             </li>
             <li>
-              <a id="nav-about" href="#about" className="nav_link">
-                ABOUT
-              </a>
+              <Link id="nav-about" href="#about" className="nav_link" to="/Signup">Signup</Link>
             </li>
             <li>
               <a id="nav-connect" href="#connect" className="nav_link">
-                CONNECT
+                Collections
               </a>
             </li>
           </ul>

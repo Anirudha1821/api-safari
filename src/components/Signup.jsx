@@ -32,6 +32,8 @@ const Signup = () => {
           alignItems: "center",
           justifyContent: "center",
           height: "80vh",
+          marginTop: "100px",// Add this line to set the top padding
+          
         }}
       >
         <CssBaseline />

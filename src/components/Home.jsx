@@ -19,7 +19,8 @@ const useStyles = makeStyles({
     component: {
         width: '60%',
         margin: '20px auto 0 auto',
-        color: 'white',    }
+        color: 'white',
+        marginTop: "100px",    }
 })
 
 const Home = () => {
